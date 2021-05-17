@@ -1,0 +1,37 @@
+{
+    "name": "za-offline-webpack-plugin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "build": "rm -rf lib && tsc",
+        "tsc": "tsc",
+        "pub": "npm run build && npm publish --access public",
+        "lint": "eslint src --fix --ext .ts",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@git.zhonganinfo.com:za-dm/za-offline-webpack-plugin.git"
+    },
+    "author": "Thyiad",
+    "license": "MIT",
+    "files": [
+        "lib/**/*"
+    ],
+    "devDependencies": {
+        "@commitlint/cli": "^12.1.4",
+        "@commitlint/config-conventional": "^12.1.4",
+        "@typescript-eslint/eslint-plugin": "^4.23.0",
+        "@typescript-eslint/parser": "^4.23.0",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "husky": "^6.0.0",
+        "prettier": "^2.3.0",
+        "pretty-quick": "^3.1.0",
+        "typescript": "^4.2.4"
+    }
+}
