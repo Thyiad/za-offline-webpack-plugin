@@ -105,6 +105,12 @@ class DMOfflineWebpackPlugin {
             const filePath = path.resolve(this.options.src, file);
             const destPath = path.resolve(this.options.target, this.options.domain, file);
             fs.copySync(filePath, destPath);
+            // 把mapping中的文件删掉
+            this.options.mapping.forEach((item) => {
+                const mappingName = path.relative(this.options.src, item.src);
+                const delPath = path.resolve(this.options.target, this.options.domain, mappingName);
+                fs.removeSync(delPath);
+            });
         });
     }
 
