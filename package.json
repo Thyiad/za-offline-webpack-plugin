@@ -1,6 +1,6 @@
 {
     "name": "@dm/offline-webpack-plugin",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
         "tsc": "tsc",
         "pub": "npm run build && npm publish --access public",
         "lint": "eslint src --fix --ext .ts",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "node ./test/test.js",
         "prepare": "husky install"
     },
     "repository": {
