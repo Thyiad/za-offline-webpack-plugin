@@ -37,7 +37,9 @@ new DMOfflineWebpackPlugin({
 以上述配置为例
 
 dist 目录：
+
 ![](./preview-dist.png)
 
 生成的 offline 目录：
+
 ![](./preview-offline.png)
