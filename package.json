@@ -1,6 +1,6 @@
 {
-    "name": "@dm/offline-webpack-plugin",
-    "version": "0.0.4",
+    "name": "za-offline-webpack-plugin",
+    "version": "0.0.1",
     "description": "",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@git.zhonganinfo.com:za-dm/za-offline-webpack-plugin.git"
+        "url": "git@github.com:Thyiad/za-offline-webpack-plugin.git"
     },
     "author": "Thyiad",
     "license": "MIT",
